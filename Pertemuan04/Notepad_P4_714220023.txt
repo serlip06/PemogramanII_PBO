@@ -1,0 +1,20 @@
+Bagian 1 
+14. eror yang muncul pada program : "Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0122	'Product_714220023.myType' is inaccessible due to its protection level	P4_1_714220023	D:\PemrogramanII_PBO\Pertemuan04\Praktikum\P4_1_714220023\P4_1_714220023\ProductTest_714220023.cs	15	Active
+"
+program tersebut eror karena 'myType' ada dibawah Protection dari kelas Product_714220023, dimana dalam class tersebut 
+
+protected string myType= "Book"; 
+code diatas untuk mendeklarasikan variabel "myType" yang memiliki data string, code protected hanya dapat diakses oleh kelas yang sama dan kelas yang diturunkan 
+
+ 
+19. pada saat program di buld dan di run, tidak terjadi eror tidak menghasilkan output apapun.karena code 'protected string myType = 'Book'' yang mendeklarasikan variabel book diubah menjadi private string myType namun tidak mendeklarasikan variabel myType.
+
+24. saat program di debug akan muncul output 'DVD' karena sebelumnya telah dideklasikan di variabel 'myProduct.MyType= DVD'
+karena dvd telah simpan dalam variabel tersebut. sehingga saat menjalankan perintah Console.Writeline. output yang keluar adalah dvd.
+
+Bagian 2
+8. pada ouput bagian title tidak muncul  karena pada kelas book_71420023 belum ditambahkan method myTitle untuk mengejsekusi method tersebut fenomena tersebut disebut inherytance 
+
+12. pada output tidak mengeksekusi perintah myTitle karena pada property myTitle belum terinisialisai dalam class Book_714220023, fenomena ini dalam oop disebut inherytance
+
