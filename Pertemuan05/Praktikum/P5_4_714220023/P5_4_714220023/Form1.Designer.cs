@@ -35,19 +35,19 @@
             this.cb_jeniskelamin = new System.Windows.Forms.ComboBox();
             this.dtp_tanggal = new System.Windows.Forms.DateTimePicker();
             this.gb_pilihankelas = new System.Windows.Forms.GroupBox();
-            this.gb_jadwal = new System.Windows.Forms.GroupBox();
-            this.rb_SeninRabu = new System.Windows.Forms.RadioButton();
-            this.rb_SelasaKamis = new System.Windows.Forms.RadioButton();
-            this.rb_SabtuMinggu = new System.Windows.Forms.RadioButton();
-            this.rb_Minggu = new System.Windows.Forms.RadioButton();
-            this.cb_Biola = new System.Windows.Forms.CheckBox();
-            this.cb_Gitar = new System.Windows.Forms.CheckBox();
-            this.cb_Saxophone = new System.Windows.Forms.CheckBox();
-            this.cb_Konduktor = new System.Windows.Forms.CheckBox();
-            this.cb_Piano = new System.Windows.Forms.CheckBox();
-            this.cb_Drum = new System.Windows.Forms.CheckBox();
-            this.cb_Vokal = new System.Windows.Forms.CheckBox();
             this.cb_Komposer = new System.Windows.Forms.CheckBox();
+            this.cb_Vokal = new System.Windows.Forms.CheckBox();
+            this.cb_Drum = new System.Windows.Forms.CheckBox();
+            this.cb_Piano = new System.Windows.Forms.CheckBox();
+            this.cb_Konduktor = new System.Windows.Forms.CheckBox();
+            this.cb_Saxophone = new System.Windows.Forms.CheckBox();
+            this.cb_Gitar = new System.Windows.Forms.CheckBox();
+            this.cb_Biola = new System.Windows.Forms.CheckBox();
+            this.gb_jadwal = new System.Windows.Forms.GroupBox();
+            this.rb_Minggu = new System.Windows.Forms.RadioButton();
+            this.rb_SabtuMinggu = new System.Windows.Forms.RadioButton();
+            this.rb_SelasaKamis = new System.Windows.Forms.RadioButton();
+            this.rb_SeninRabu = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -124,6 +124,86 @@
             this.gb_pilihankelas.TabStop = false;
             this.gb_pilihankelas.Text = "Pilihan Kelas";
             // 
+            // cb_Komposer
+            // 
+            this.cb_Komposer.AutoSize = true;
+            this.cb_Komposer.Location = new System.Drawing.Point(128, 103);
+            this.cb_Komposer.Name = "cb_Komposer";
+            this.cb_Komposer.Size = new System.Drawing.Size(73, 17);
+            this.cb_Komposer.TabIndex = 7;
+            this.cb_Komposer.Text = "Komposer";
+            this.cb_Komposer.UseVisualStyleBackColor = true;
+            // 
+            // cb_Vokal
+            // 
+            this.cb_Vokal.AutoSize = true;
+            this.cb_Vokal.Location = new System.Drawing.Point(128, 79);
+            this.cb_Vokal.Name = "cb_Vokal";
+            this.cb_Vokal.Size = new System.Drawing.Size(53, 17);
+            this.cb_Vokal.TabIndex = 6;
+            this.cb_Vokal.Text = "Vokal";
+            this.cb_Vokal.UseVisualStyleBackColor = true;
+            // 
+            // cb_Drum
+            // 
+            this.cb_Drum.AutoSize = true;
+            this.cb_Drum.Location = new System.Drawing.Point(128, 55);
+            this.cb_Drum.Name = "cb_Drum";
+            this.cb_Drum.Size = new System.Drawing.Size(51, 17);
+            this.cb_Drum.TabIndex = 5;
+            this.cb_Drum.Text = "Drum";
+            this.cb_Drum.UseVisualStyleBackColor = true;
+            // 
+            // cb_Piano
+            // 
+            this.cb_Piano.AutoSize = true;
+            this.cb_Piano.Location = new System.Drawing.Point(128, 31);
+            this.cb_Piano.Name = "cb_Piano";
+            this.cb_Piano.Size = new System.Drawing.Size(53, 17);
+            this.cb_Piano.TabIndex = 4;
+            this.cb_Piano.Text = "Piano";
+            this.cb_Piano.UseVisualStyleBackColor = true;
+            // 
+            // cb_Konduktor
+            // 
+            this.cb_Konduktor.AutoSize = true;
+            this.cb_Konduktor.Location = new System.Drawing.Point(7, 103);
+            this.cb_Konduktor.Name = "cb_Konduktor";
+            this.cb_Konduktor.Size = new System.Drawing.Size(75, 17);
+            this.cb_Konduktor.TabIndex = 3;
+            this.cb_Konduktor.Text = "Konduktor";
+            this.cb_Konduktor.UseVisualStyleBackColor = true;
+            // 
+            // cb_Saxophone
+            // 
+            this.cb_Saxophone.AutoSize = true;
+            this.cb_Saxophone.Location = new System.Drawing.Point(7, 79);
+            this.cb_Saxophone.Name = "cb_Saxophone";
+            this.cb_Saxophone.Size = new System.Drawing.Size(80, 17);
+            this.cb_Saxophone.TabIndex = 2;
+            this.cb_Saxophone.Text = "Saxophone";
+            this.cb_Saxophone.UseVisualStyleBackColor = true;
+            // 
+            // cb_Gitar
+            // 
+            this.cb_Gitar.AutoSize = true;
+            this.cb_Gitar.Location = new System.Drawing.Point(7, 55);
+            this.cb_Gitar.Name = "cb_Gitar";
+            this.cb_Gitar.Size = new System.Drawing.Size(48, 17);
+            this.cb_Gitar.TabIndex = 1;
+            this.cb_Gitar.Text = "Gitar";
+            this.cb_Gitar.UseVisualStyleBackColor = true;
+            // 
+            // cb_Biola
+            // 
+            this.cb_Biola.AutoSize = true;
+            this.cb_Biola.Location = new System.Drawing.Point(7, 31);
+            this.cb_Biola.Name = "cb_Biola";
+            this.cb_Biola.Size = new System.Drawing.Size(49, 17);
+            this.cb_Biola.TabIndex = 0;
+            this.cb_Biola.Text = "Biola";
+            this.cb_Biola.UseVisualStyleBackColor = true;
+            // 
             // gb_jadwal
             // 
             this.gb_jadwal.Controls.Add(this.rb_Minggu);
@@ -137,27 +217,16 @@
             this.gb_jadwal.TabStop = false;
             this.gb_jadwal.Text = "Pilihan Jadwal";
             // 
-            // rb_SeninRabu
+            // rb_Minggu
             // 
-            this.rb_SeninRabu.AutoSize = true;
-            this.rb_SeninRabu.Location = new System.Drawing.Point(19, 31);
-            this.rb_SeninRabu.Name = "rb_SeninRabu";
-            this.rb_SeninRabu.Size = new System.Drawing.Size(153, 17);
-            this.rb_SeninRabu.TabIndex = 0;
-            this.rb_SeninRabu.TabStop = true;
-            this.rb_SeninRabu.Text = "Senin && Rabu, 14.00-16.00";
-            this.rb_SeninRabu.UseVisualStyleBackColor = true;
-            // 
-            // rb_SelasaKamis
-            // 
-            this.rb_SelasaKamis.AutoSize = true;
-            this.rb_SelasaKamis.Location = new System.Drawing.Point(19, 55);
-            this.rb_SelasaKamis.Name = "rb_SelasaKamis";
-            this.rb_SelasaKamis.Size = new System.Drawing.Size(160, 17);
-            this.rb_SelasaKamis.TabIndex = 1;
-            this.rb_SelasaKamis.TabStop = true;
-            this.rb_SelasaKamis.Text = "Selasa && Kamis, 14.00-16.00";
-            this.rb_SelasaKamis.UseVisualStyleBackColor = true;
+            this.rb_Minggu.AutoSize = true;
+            this.rb_Minggu.Location = new System.Drawing.Point(19, 112);
+            this.rb_Minggu.Name = "rb_Minggu";
+            this.rb_Minggu.Size = new System.Drawing.Size(120, 17);
+            this.rb_Minggu.TabIndex = 3;
+            this.rb_Minggu.TabStop = true;
+            this.rb_Minggu.Text = "Minggu,13.00-17.00";
+            this.rb_Minggu.UseVisualStyleBackColor = true;
             // 
             // rb_SabtuMinggu
             // 
@@ -170,96 +239,27 @@
             this.rb_SabtuMinggu.Text = "Sabtu && Minggu, 09.00 - 11.00";
             this.rb_SabtuMinggu.UseVisualStyleBackColor = true;
             // 
-            // rb_Minggu
+            // rb_SelasaKamis
             // 
-            this.rb_Minggu.AutoSize = true;
-            this.rb_Minggu.Location = new System.Drawing.Point(19, 112);
-            this.rb_Minggu.Name = "rb_Minggu";
-            this.rb_Minggu.Size = new System.Drawing.Size(120, 17);
-            this.rb_Minggu.TabIndex = 3;
-            this.rb_Minggu.TabStop = true;
-            this.rb_Minggu.Text = "Minggu,13.00-17.00";
-            this.rb_Minggu.UseVisualStyleBackColor = true;
+            this.rb_SelasaKamis.AutoSize = true;
+            this.rb_SelasaKamis.Location = new System.Drawing.Point(19, 55);
+            this.rb_SelasaKamis.Name = "rb_SelasaKamis";
+            this.rb_SelasaKamis.Size = new System.Drawing.Size(160, 17);
+            this.rb_SelasaKamis.TabIndex = 1;
+            this.rb_SelasaKamis.TabStop = true;
+            this.rb_SelasaKamis.Text = "Selasa && Kamis, 14.00-16.00";
+            this.rb_SelasaKamis.UseVisualStyleBackColor = true;
             // 
-            // cb_Biola
+            // rb_SeninRabu
             // 
-            this.cb_Biola.AutoSize = true;
-            this.cb_Biola.Location = new System.Drawing.Point(7, 31);
-            this.cb_Biola.Name = "cb_Biola";
-            this.cb_Biola.Size = new System.Drawing.Size(49, 17);
-            this.cb_Biola.TabIndex = 0;
-            this.cb_Biola.Text = "Biola";
-            this.cb_Biola.UseVisualStyleBackColor = true;
-            // 
-            // cb_Gitar
-            // 
-            this.cb_Gitar.AutoSize = true;
-            this.cb_Gitar.Location = new System.Drawing.Point(7, 55);
-            this.cb_Gitar.Name = "cb_Gitar";
-            this.cb_Gitar.Size = new System.Drawing.Size(48, 17);
-            this.cb_Gitar.TabIndex = 1;
-            this.cb_Gitar.Text = "Gitar";
-            this.cb_Gitar.UseVisualStyleBackColor = true;
-            // 
-            // cb_Saxophone
-            // 
-            this.cb_Saxophone.AutoSize = true;
-            this.cb_Saxophone.Location = new System.Drawing.Point(7, 79);
-            this.cb_Saxophone.Name = "cb_Saxophone";
-            this.cb_Saxophone.Size = new System.Drawing.Size(80, 17);
-            this.cb_Saxophone.TabIndex = 2;
-            this.cb_Saxophone.Text = "Saxophone";
-            this.cb_Saxophone.UseVisualStyleBackColor = true;
-            // 
-            // cb_Konduktor
-            // 
-            this.cb_Konduktor.AutoSize = true;
-            this.cb_Konduktor.Location = new System.Drawing.Point(7, 103);
-            this.cb_Konduktor.Name = "cb_Konduktor";
-            this.cb_Konduktor.Size = new System.Drawing.Size(75, 17);
-            this.cb_Konduktor.TabIndex = 3;
-            this.cb_Konduktor.Text = "Konduktor";
-            this.cb_Konduktor.UseVisualStyleBackColor = true;
-            // 
-            // cb_Piano
-            // 
-            this.cb_Piano.AutoSize = true;
-            this.cb_Piano.Location = new System.Drawing.Point(128, 31);
-            this.cb_Piano.Name = "cb_Piano";
-            this.cb_Piano.Size = new System.Drawing.Size(53, 17);
-            this.cb_Piano.TabIndex = 4;
-            this.cb_Piano.Text = "Piano";
-            this.cb_Piano.UseVisualStyleBackColor = true;
-            // 
-            // cb_Drum
-            // 
-            this.cb_Drum.AutoSize = true;
-            this.cb_Drum.Location = new System.Drawing.Point(128, 55);
-            this.cb_Drum.Name = "cb_Drum";
-            this.cb_Drum.Size = new System.Drawing.Size(51, 17);
-            this.cb_Drum.TabIndex = 5;
-            this.cb_Drum.Text = "Drum";
-            this.cb_Drum.UseVisualStyleBackColor = true;
-            // 
-            // cb_Vokal
-            // 
-            this.cb_Vokal.AutoSize = true;
-            this.cb_Vokal.Location = new System.Drawing.Point(128, 79);
-            this.cb_Vokal.Name = "cb_Vokal";
-            this.cb_Vokal.Size = new System.Drawing.Size(53, 17);
-            this.cb_Vokal.TabIndex = 6;
-            this.cb_Vokal.Text = "Vokal";
-            this.cb_Vokal.UseVisualStyleBackColor = true;
-            // 
-            // cb_Komposer
-            // 
-            this.cb_Komposer.AutoSize = true;
-            this.cb_Komposer.Location = new System.Drawing.Point(128, 103);
-            this.cb_Komposer.Name = "cb_Komposer";
-            this.cb_Komposer.Size = new System.Drawing.Size(73, 17);
-            this.cb_Komposer.TabIndex = 7;
-            this.cb_Komposer.Text = "Komposer";
-            this.cb_Komposer.UseVisualStyleBackColor = true;
+            this.rb_SeninRabu.AutoSize = true;
+            this.rb_SeninRabu.Location = new System.Drawing.Point(19, 31);
+            this.rb_SeninRabu.Name = "rb_SeninRabu";
+            this.rb_SeninRabu.Size = new System.Drawing.Size(153, 17);
+            this.rb_SeninRabu.TabIndex = 0;
+            this.rb_SeninRabu.TabStop = true;
+            this.rb_SeninRabu.Text = "Senin && Rabu, 14.00-16.00";
+            this.rb_SeninRabu.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
