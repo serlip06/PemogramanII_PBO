@@ -37,7 +37,7 @@ namespace P10_1_714220023
         {
             npm.Text = "";
             nama.Text = "";
-            angkatan.SelectedIndex = -1;
+            angkatan.SelectedIndex = -1;// fungsi untuk combobox 
             alamat.Text = "";
             email.Text = "";
             nohp.Text = "";
@@ -71,6 +71,7 @@ namespace P10_1_714220023
         {
             if (npm.Text == "" || nama.Text == "" || angkatan.SelectedIndex == -1 ||alamat.Text == "" || email.Text == "" || nohp.Text == "")
             {
+                // validasi data '|| disebut or'
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
@@ -99,7 +100,7 @@ namespace P10_1_714220023
             email.Text = DataMahasiswa.Rows[e.RowIndex].Cells[4].Value.ToString();
             nohp.Text = DataMahasiswa.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
-
+            
         private void btnUbah_Click(object sender, EventArgs e)
         {
             if (npm.Text == "" || nama.Text == "" || angkatan.SelectedIndex == -1 || alamat.Text == "" || email.Text == "" || nohp.Text == "")
@@ -143,6 +144,11 @@ namespace P10_1_714220023
                 Tampil();
             }
 
+
+        }
+
+        private void npm_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

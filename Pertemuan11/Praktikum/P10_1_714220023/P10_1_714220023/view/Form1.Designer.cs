@@ -147,6 +147,7 @@
             this.npm.Name = "npm";
             this.npm.Size = new System.Drawing.Size(172, 20);
             this.npm.TabIndex = 8;
+            this.npm.TextChanged += new System.EventHandler(this.npm_TextChanged);
             // 
             // label1
             // 
