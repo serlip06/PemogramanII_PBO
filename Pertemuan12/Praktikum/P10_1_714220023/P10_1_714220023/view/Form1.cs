@@ -164,6 +164,9 @@ namespace P10_1_714220023
             DataMahasiswa.DataSource = koneksi.ShowData("SELECT * FROM t_mahasiswa WHERE npm LIKE '%" + tbCariData.Text +  "%' OR nama LIKE '%" + tbCariData.Text + "%'");
         }
 
-        
+        private void DataMahasiswa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

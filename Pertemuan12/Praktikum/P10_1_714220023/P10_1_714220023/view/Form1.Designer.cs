@@ -49,9 +49,9 @@
             this.btnUbah = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.tbCariData = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbCariData = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataMahasiswa)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,7 @@
             this.DataMahasiswa.Size = new System.Drawing.Size(625, 150);
             this.DataMahasiswa.TabIndex = 0;
             this.DataMahasiswa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataMahasiswa_CellClick);
+            this.DataMahasiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataMahasiswa_CellContentClick);
             // 
             // groupBox2
             // 
@@ -277,22 +278,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Form Pencarian";
             // 
-            // tbCariData
-            // 
-            this.tbCariData.Location = new System.Drawing.Point(79, 44);
-            this.tbCariData.Name = "tbCariData";
-            this.tbCariData.Size = new System.Drawing.Size(184, 20);
-            this.tbCariData.TabIndex = 0;
-            this.tbCariData.TextChanged += new System.EventHandler(this.tbCariData_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(113, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 13);
-            this.label7.TabIndex = 1;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -302,6 +287,22 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "Cari Data";
             this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(113, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 1;
+            // 
+            // tbCariData
+            // 
+            this.tbCariData.Location = new System.Drawing.Point(79, 44);
+            this.tbCariData.Name = "tbCariData";
+            this.tbCariData.Size = new System.Drawing.Size(184, 20);
+            this.tbCariData.TabIndex = 0;
+            this.tbCariData.TextChanged += new System.EventHandler(this.tbCariData_TextChanged);
             // 
             // Form1
             // 
